@@ -1,0 +1,13 @@
+name: AngularDartWSK
+description: A sample web application
+dependencies:
+  browser: any
+  angular: ">=0.12.0 <0.13.0" 
+  shadow_dom: any
+  start: any
+  sass: any
+  di: any
+transformers:
+- angular
+- sass
+

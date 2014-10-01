@@ -1,4 +1,4 @@
-part of dashboard_app;
+part of website_app;
 
 @Controller(selector: '[indexctrl]', publishAs: 'mainCtrl')
 class MainController {

@@ -1,4 +1,4 @@
 **.DS_Store
 build/
-**/packages/
+/**/packages
 pubspec.lock

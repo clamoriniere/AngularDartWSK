@@ -45,10 +45,10 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body indexctrl>
-    <header class="app-bar promote-layer">
+  <body indexctrl ng-class="mainCtrl.getBodyClass()">
+    <header class="app-bar promote-layer" ng-class="mainCtrl.getBodyClass()">
       <div class="app-bar-container">
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
+        <button class="menu" ng-click="mainCtrl.toggleMenu()"><img src="images/hamburger.svg" alt="Menu"></button>
         <h1 class="logo">Web <strong>Starter Kit</strong></h1>
         <section class="app-bar-actions">
         <!-- Put App Bar Buttons Here -->
@@ -57,16 +57,16 @@
       </div>
     </header>
 
-    <nav class="navdrawer-container promote-layer">
+    <nav class="navdrawer-container promote-layer" ng-class="mainCtrl.getNavDrawerContainerClass()">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="#hello">Hello</a></li>
-        <li><a href="#get-started">Get Started</a></li>
-        <li><a href="styleguide.html">Style Guide</a></li>
+        <li ng-click="mainCtrl.closeMenu()"><a href="#hello">Hello</a></li>
+        <li ng-click="mainCtrl.closeMenu()"><a href="#get-started">Get Started</a></li>
+        <li ng-click="mainCtrl.closeMenu()"><a href="styleguide.html">Style Guide</a></li>
       </ul>
     </nav>
 
-    <main>
+    <main ng-click="mainCtrl.closeMenu()">
       <h1 id="hello" ng-cloak>Hello {{mainCtrl.test}}</h1>
       <p>Welcome to Web Starter Kit. </p>
 

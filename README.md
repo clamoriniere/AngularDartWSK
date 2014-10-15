@@ -3,6 +3,8 @@ AngularDartWSK
 
 AngularDart base project with Google Web Start Kit
 
+drone.io: [![Build Status](https://drone.io/github.com/cedriclam/AngularDartWSK/status.png)](https://drone.io/github.com/cedriclam/AngularDartWSK/latest)
+
 How run locally
 ---------------
 

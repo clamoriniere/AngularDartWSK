@@ -1,18 +1,21 @@
 AngularDartWSK
 ==============
 
-AngularDart base project with Google Web Start Kit
+Aim of this project is to propose a base project that combined:
+* [AngularDart](https://angulardart.org/)
+* [Google Web Starter Kit](https://developers.google.com/web/starter-kit/)
 
 drone.io: [![Build Status](https://drone.io/github.com/cedriclam/AngularDartWSK/status.png)](https://drone.io/github.com/cedriclam/AngularDartWSK/latest)
 
-How run locally
----------------
+# How run 
+
+## locally with pub
 
 ```
 pub serve
 ```
 
-How to run in a Docker container
+## in a Docker container
 --------------------------------
 
 ```
@@ -21,15 +24,13 @@ docker build -t angulardwsk .
 docker run -d -p 8080:8080 angulardwsk
 ```
 
-Acces to the website
---------------------
+## Access the website
 
 ```
 chrome http://localhost:8080/
 ```
 
-to know the version of Dart SDK used:
-
-```
-curl http://localhost:8080/version
-```
+# Still TODO
+* Add Unit-test configuration and examples.
+* Menu componentization 
+* Add others AngularDart feature examples

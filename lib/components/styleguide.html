@@ -3,32 +3,33 @@
     <div class="summary-header">
       <div class="container">
         <ol class="summary-header__anchor-list  list-links">
-          <li class="summary-header__anchors-item"><a href="#/styleguide/typography">Typography</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/buttons">Buttons</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/lists">Lists</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/links">Links</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/icons">Icons</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/breadcrumbs">Breadcrumbs</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/table">Table</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/grid">Grid</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/colors">Colors</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/highlights">Highlights</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/editorial-header">Editorial header</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/article-section">Article section</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/guides-section">Guides section</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/page-header">Page header</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/quote">Quote</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/guides-intro">Featured icons</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/featured-spotlight">Featured spotlight</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/featured-list">Featured list</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/next-lessons">Featured block</a></li>
-          <li class="summary-header__anchors-item"><a href="#/styleguide/article-navigation">Article navigation</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/typography" ng-click="scrollTo('styleguide__typography')">Typography</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/buttons" ng-click="scrollTo('styleguide__buttons')">Buttons</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/lists" ng-click="scrollTo('styleguide__lists')">Lists</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/links" ng-click="scrollTo('styleguide__links')">Links</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/icons" ng-click="scrollTo('styleguide__icons')">Icons</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/breadcrumbs" ng-click="scrollTo('styleguide__breadcrumbs')">Breadcrumbs</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/table" ng-click="scrollTo('styleguide__table')">Table</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/grid" ng-click="scrollTo('styleguide__grid')">Grid</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/colors" ng-click="scrollTo('styleguide__colors')">Colors</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/highlights" ng-click="scrollTo('styleguide__highlights')">Highlights</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/editorial-header" ng-click="scrollTo('styleguide__editorial-header')">Editorial header</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/article-section" ng-click="scrollTo('styleguide__article-section')">Article section</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/guides-section" ng-click="scrollTo('styleguide__guides-section')">Guides section</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/page-header" ng-click="scrollTo('styleguide__page-header')">Page header</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/quote" ng-click="scrollTo('styleguide__quote')">Quote</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/guides-intro" ng-click="scrollTo('styleguide__guides-intro')">Featured icons</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/featured-spotlight" ng-click="scrollTo('styleguide__featured-spotlight')">Featured spotlight</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/featured-list" ng-click="scrollTo('styleguide__featured-list')">Featured list</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/next-lessons" ng-click="scrollTo('styleguide__next-lessons')">Featured block</a></li>
+          <li class="summary-header__anchors-item"><a href="#/styleguide/article-navigation" ng-click="scrollTo('styleguide__article-nav')">Article navigation</a></li>
         </ol>
       </div>
     </div>
 
     <div class="container">
       <button id="snippet-toggle" class="button--primary" ng-click="clickToggle()">Toggle Code Snippets</button>
+      <button id="snippet-toggle" class="button--primary" ng-click="scrollTo(styleguide__buttons)">scrollTo</button>
     </div>
 
     <div class="container">
@@ -1117,7 +1118,7 @@
 
     <footer id="gc-footer">
       <div class="container">
-        <p><a href="#">Back to top</a></p>
+        <p><a href="#/styleguide" ng-click="scrollTo('summary-header__anchor-list')">Back to top</a></p>
       </div>
     </footer>
 

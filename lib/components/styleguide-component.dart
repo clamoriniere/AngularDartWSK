@@ -42,6 +42,15 @@ class StyleGuide implements AttachAware{
     }
   }
   
+  void scrollTo(String iClass) {
+
+    Element div = document.querySelector("."+iClass);
+    
+    if (div != null) {
+      window.scrollTo(0, div.offsetTop);
+    }
+  }
+  
   void _createCodeSamples(){
     _codeElements = document.querySelectorAll(".code-sample");
     

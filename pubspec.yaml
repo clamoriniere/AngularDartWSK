@@ -3,6 +3,9 @@ description: A sample web application
 dependencies:
   browser: any
   angular: ">=1.0.0 <2.0.0" 
+  shelf: ">=0.5.5+1 <0.6.0"
+  shelf_static: ">=0.2.1 <0.3.0"
+  redstone: ">=0.5.18 <0.6.0"
   shadow_dom: any
   start: any
   sass: any

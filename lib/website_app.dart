@@ -9,37 +9,39 @@ part 'website_router.dart';
 part 'components/styleguide-component.dart';
 
 @Injectable()
-class contextApp{
+class contextApp {
   String text = "Cedric";
   bool _isMenuOpen = false;
-    
-    String getBodyClass() {
-      if (_isMenuOpen) {
-        return "open";
-      }
-      return "";
-    }
 
-    String getNavDrawerContainerClass() {
-      if (_isMenuOpen) {
-        return "open opened";
-      }
-      return "";
+  String getBodyClass() {
+    if (_isMenuOpen) {
+      return "open";
     }
+    return "";
+  }
 
-    void closeMenu() {
-      _isMenuOpen = false;
+  String getNavDrawerContainerClass() {
+    if (_isMenuOpen) {
+      return "open opened";
     }
+    return "";
+  }
 
-    void toggleMenu() {
-      _isMenuOpen = true;
-    }
+  void closeMenu() {
+    _isMenuOpen = false;
+  }
+
+  void toggleMenu() {
+    _isMenuOpen = true;
+  }
 }
 
 @Injectable()
 class MyUrlRewriter implements UrlRewriter {
-  String call(url){
-      return url.startsWith('packages/AngularDartWSK/lib/') ? 'packages/AngularDartWSK/${url.substring(28)}' : url;
+  String call(url) {
+    return url.startsWith('packages/AngularDartWSK/lib/') ?
+        'packages/AngularDartWSK/${url.substring(28)}' :
+        url;
   }
 }
 
@@ -48,17 +50,17 @@ class MyModule extends Module {
   MyModule() {
     bind(StyleGuide);
     bind(RouteInitializerFn, toValue: initRoutes);
-    bind(NgRoutingUsePushState, toValue: new NgRoutingUsePushState.value(false));
+    bind(
+        NgRoutingUsePushState,
+        toValue: new NgRoutingUsePushState.value(false));
 
     bind(UrlRewriter, toImplementation: MyUrlRewriter);
-    
+
     this.install(new AnimationModule());
   }
 }
 
 startApp() {
-  applicationFactory()
-     .rootContextType(contextApp)
-     .addModule(new MyModule()) 
-     .run();
+  applicationFactory().rootContextType(
+      contextApp).addModule(new MyModule()).run();
 }

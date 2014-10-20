@@ -7,7 +7,7 @@ Aim of this project is to propose a base project that combined:
 
 drone.io: [![Build Status](https://drone.io/github.com/cedriclam/AngularDartWSK/status.png)](https://drone.io/github.com/cedriclam/AngularDartWSK/latest)
 
-# How to run 
+# How to run
 
 ## locally with pub
 
@@ -32,5 +32,5 @@ chrome http://localhost:8080/
 
 # Still TODO
 * Add Unit-test configuration and examples.
-* Menu componentization 
+* Menu componentization
 * Add others AngularDart feature examples

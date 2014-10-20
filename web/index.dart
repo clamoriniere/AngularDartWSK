@@ -9,9 +9,7 @@ void main() {
   Logger.root.onRecord.listen((LogRecord r) {
     print(r.message);
   });
-  
-  applicationFactory()
-     .rootContextType(contextApp)
-     .addModule(new MyModule()) 
-     .run();
+
+  applicationFactory().rootContextType(
+      contextApp).addModule(new MyModule()).run();
 }
